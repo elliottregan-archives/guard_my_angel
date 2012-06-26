@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guard My Angel</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  
+  <script src="scripts.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="overlay_box">
+  <div class="close"></div>
+  </div>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="./landing.html">Home</a></li>
+          <li><a href="./faq.html">Q&A</a></li>
+          <li><a href="./news.html">News & Updates</a></li>
+        </ul>
+      </nav>
+      <h1>Q&A</h1>
+    </div>
+  </header>
+  
+  	<div class="wrapper">
+  		<h2>Privacy</h2>
+  	</div>
+  </div>
+  <div class="wrapper">
+  		<h3>Is my location information available before I reach emergency state?</h3>
+  		<p>No, we provide access to this information only when we send the notifications to your pre-defined contacts.
+  		We also allow you to share your location information with your friends after you indicate you are OK.</p>
+  		<h3>For how long does the location information in the server is kept?</h3>
+  		<p>We clear trip information periodically for trips that took place more than 24 hours ago.</p>
+  		<p>We don't delete trip information if you decided to share it with your friends.</p>
+  		
+  		<h3>Who can access my trip information?</h3>
+  		<p>After we send the notification, the trip information is available to anyone who has the link we published in the emergency notification you can forward the information to other friends by sending the link.</p>
+  		<p>The link will not work after we delete the information from the servers &#8211; after 24 hours,<br />
+  		unless you decided to share your trip information with your friends.</p>
+  		<h3>Why do we ask for permissions?</h3>
+  		<p>We understand that we request you for some permissions. Here is a detailed explanation of why we need each permission. Also please take a look in our Privacy Policy where we detail our commitment to your privacy.</p>
+
+		  <h4>YOUR LOCATION - FINE (GPS) LOCATION</h4>
+  		<p>This permission is required so we can provide your contacts a map with your route in the case of an emergency. Of course we dont disclose this information to anyone unless you reach an emergency situation and we delete this information completely after 24 hours from our servers.</p>
+  		
+  		<h4>NETWORK COMMUNICATION - FULL INTERNET ACCESS</h4>
+  		<p>We require this permission so we can send the information we collect from your device to our servers. In case of an emergency we send a notification from our servers and not your device to provide a reliable service (so even if your phone breaks your contacts will still get a notification).</p>
+  		
+  		<h4>YOUR PERSONAL INFORMATION - READ CONTACT DATA</h4>
+  		<p>We ask permission to read your contacts so you will be able to add contacts from your address book to your notification list and not add them manually.</p>
+    		
+  		<h4>PHONE CALLS - READ PHONE STATE AND IDENTITY</h4>
+  		  <p>There are 2 reasons for this permission:</p>
+  		  <ol>
+      		<li>We need to determine your locality (the language the phone is set to, and your country code) so we can send adjust automatically your local number for global use from our servers around the world.</li>
+      		<li>We save you the need to enter information about yourself (name/phone) in order to identify you to your contacts. (Note: not implemented at the moment)</li>
+  		  </ol>
+  		  
+  		<h4>SYSTEM TOOLS - PREVENT DEVICE FROM SLEEPING</h4>
+  		<p>This is a very important permission that allows us to collect your location even when the device is in sleep mode. This happens for example when you are not using your phone and screen is off. Without this permission we wouldn't be able to get your complete trip information.</p>
+  		<p>Your contacts may get partial information about your location and will not be able to give you the help you need.</p>
+    </div>
+    
+   	   
+   
+</body>
+</html>
