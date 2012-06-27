@@ -4,22 +4,23 @@ $(document).ready(function() {
     $("#overlay_box").children().fadeOut();
   });
   
-  $(".video_wrapper").click(function() {
-    $("#overlay").fadeIn();
-    $(".intro_movie, .close").show();
-    $("#overlay_box").delay(400).fadeIn();
-  });
-    
   var ua = navigator.userAgent.toLowerCase();
   var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
   if(isAndroid) {
-    $("a.store").attr("href", "https://play.google.com/store/apps/details?id=com.guardmyangel");
+    $("a.store").attr("href", "https://play.google.com/store/apps/details?id=com.guardmyangel")
+    $(".video_wrapper").wrap("<a href='http://m.youtube.com/watch?v=oq-iCdrMFrg' target='blank' />")
   }
     
   if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
     $("a.store").click(function() {
       $(".coming_soon, .close").show();
       $("#overlay").fadeIn();
+      $("#overlay_box").delay(400).fadeIn();
+    });
+    
+    $(".video_wrapper").click(function() {
+      $("#overlay").fadeIn();
+      $(".intro_movie, .close").show();
       $("#overlay_box").delay(400).fadeIn();
     });
   };
@@ -33,6 +34,12 @@ $(document).ready(function() {
     $("button.ios, .ios_link").click(function() {
       $(".coming_soon, .close").show();
       $("#overlay").fadeIn();
+      $("#overlay_box").delay(400).fadeIn();
+    });
+    
+    $(".video_wrapper").click(function() {
+      $("#overlay").fadeIn();
+      $(".intro_movie, .close").show();
       $("#overlay_box").delay(400).fadeIn();
     });
   }
