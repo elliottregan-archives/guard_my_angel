@@ -8,12 +8,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=1, user-scalable=no" />
   
   <script src="scripts.js" type="text/javascript"></script>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32848059-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
 </head>
 <body>
   <div id="overlay"></div>
   <div id="overlay_box">
     <iframe class="intro_movie" width="560" height="315" src="http://www.youtube.com/embed/oq-iCdrMFrg" frameborder="0" allowfullscreen></iframe>
     <p class="coming_soon">Coming soon to the iOS App store!</p><br />
+    <form method="post" action="">
+      <input type="text" name="email" value="" />
+      <input type="submit" name="email" value="Submit" />
+    </form>
     <p class="learn_more mbl"><a href="about.html" >Learn More...</a></p>
     <div class="close"></div>
   </div>

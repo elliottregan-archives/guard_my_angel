@@ -13,7 +13,7 @@ $(document).ready(function() {
     
   if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
     $("a.store").click(function() {
-      $(".coming_soon, .close").show();
+      $(".coming_soon, .close, form").show();
       $("#overlay").fadeIn();
       $("#overlay_box").delay(400).fadeIn();
     });
@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
     
     $("button.ios, .ios_link").click(function() {
-      $(".coming_soon, .close").show();
+      $(".coming_soon, .close, form").show();
       $("#overlay").fadeIn();
       $("#overlay_box").delay(400).fadeIn();
     });
