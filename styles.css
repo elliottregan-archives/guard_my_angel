@@ -780,6 +780,8 @@ section#article_reviews a {
  img.logo {
    margin-top: 40px;
    width: 70%;
+   clear: both;
+   display: block;
  }
 
  
