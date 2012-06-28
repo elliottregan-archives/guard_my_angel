@@ -426,6 +426,7 @@ p.mbl {
 
 .coming_soon {
   display: none;
+  text-align: center;
 }
 
 .ios_link, .android_link {
@@ -569,6 +570,26 @@ dd:after {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
+    text-align: center;
+  }
+  
+  .contact {
+    width: 200px;
+    margin: auto;
+    display: block;
+  }
+  
+  .contact input {
+    display: block;
+    background-color: #fd1818;
+  }
+  
+  input {
+    background-color: red;
+  }
+  
+  #test {
+    background: red;
   }
   
   #overlay_box iframe {
