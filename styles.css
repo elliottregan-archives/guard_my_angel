@@ -100,12 +100,6 @@ footer li:hover {
   border-bottom-style: dotted;  
 }
 
-.logo {
-  display: block;
-  width: 460px;
-  margin-top: 20px;
-}
-
 .wrapper {
   width: 980px;
   margin: 0 auto;
@@ -124,10 +118,9 @@ em {
 }
 
 .left p {
-  line-height: 1.4em;
-  font-size: 1.8em;
   margin-top: 0px;
   text-shadow: 0 2px 0 #ffffff;
+  font: 1.8em/1.4em Habibi;
 }
 
 .right {
@@ -288,7 +281,7 @@ button.ios:active, button.android:active {
 .video_wrapper {
   position: relative;
   top: 6px;
-  margin-left: 30px;
+  margin-left: 0px;
   width: 70px;
   height: 46px;
   cursor: pointer;
@@ -346,6 +339,45 @@ ul a:hover {
 header li {
   display: inline-block;
   margin: 2px 8px;
+}
+
+header img {
+  width: 120px;
+}
+
+.logo_txt {
+  display: inline;
+  position: absolute;
+  font: 2.4em 'Habibi';
+}
+
+img.logo {
+  width: 500px;
+}
+
+div.logo {
+  display: inline;
+  position: relative;
+  width: 200px;
+  clear: both;
+  top: 0;
+  font-size: .9em;
+}
+
+.logo .pt1 {
+  font-weight: bold;
+  color: #7a7a7a;
+  font-size: .7em;
+  left: 32px;
+  position: absolute;
+  display: block;
+  width: 200px;
+}
+
+.logo .pt2 {
+  font-size: 1.9em;
+  color: #29363b;
+  position: absolute;
 }
 
 h1 {
@@ -538,6 +570,11 @@ dd:after {
 
 p.coming_soon {
   text-align: center;
+}
+
+#overlay_box h2 {
+  text-align: center;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 1180px) {
