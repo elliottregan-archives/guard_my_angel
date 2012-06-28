@@ -515,7 +515,7 @@ dd:after {
 }
 
 .contact {
-  
+  display: none;
 }
 
 .contact input {
@@ -575,6 +575,24 @@ p.coming_soon {
 #overlay_box h2 {
   text-align: center;
   margin-top: 10px;
+}
+
+.item {
+  float: left;
+  margin: 16px 15px;
+  border: 8px solid rgb(255, 255, 255);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.item:nth-child(even) {
+  margin-left: 0;
+}
+
+section#article_reviews a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 1180px) {
