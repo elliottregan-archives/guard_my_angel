@@ -424,11 +424,6 @@ p.mbl {
   display: none;
 }
 
-.coming_soon {
-  display: none;
-  text-align: center;
-}
-
 .ios_link, .android_link {
   border-bottom: 1px dotted #747474;
   cursor: pointer;
@@ -460,6 +455,56 @@ dt, dd {
 dd:after {
   content: '\A';
   white-space: pre;
+}
+
+.contact {
+  
+}
+
+.contact input {
+  display: block;
+  padding: 6px;
+  font-size: 1.1em;
+  margin: 8px auto;
+  border: 1px solid #b4b4b4;
+  border-radius: 4px;
+  width: 200px;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.28);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.contact input[type="submit"] {
+  width: 212px;
+  padding: 10px;
+  border-color: #919b9f;
+  -moz-box-shadow: inset 0 0 4px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: inset 0 0 4px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  box-shadow: inset 0 0 4px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  background: -moz-linear-gradient(90deg, rgba(254, 254, 254, 0.04) 0%, rgba(255, 255, 255, 0) 44.7%, rgba(254, 254, 254, 0.27) 47.8%, rgba(255, 255, 255, 0.14) 100%), -moz-linear-gradient(90deg, #85cae5 0%, #a6d7ea 25.3%, #9bd3e8 80.1%, #94cde3 100%) #e3f2f8;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(254, 254, 254, 0.04)), color-stop(0.447, rgba(255, 255, 255, 0)), color-stop(0.478, rgba(254, 254, 254, 0.27)), to(rgba(255, 255, 255, 0.14))), -webkit-gradient(linear, left bottom, left top, from(#85cae5), color-stop(0.253, #a6d7ea), color-stop(0.801, #9bd3e8), to(#94cde3)) #e3f2f8;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.71), 0 0 12px #ffffff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.contact input[type="submit"]:hover {
+  -moz-box-shadow: inset 0 0 20px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: inset 0 0 20px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  box-shadow: inset 0 0 20px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+}
+
+.contact input[type="submit"]:active {
+  -moz-box-shadow: inset 0 0 20px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: inset 0 0 20px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+  box-shadow: inset 0 0 20px rgb(255, 255, 255), inset 0 1px 0 rgba(255, 255, 255, 0.76), 0 1px 2px rgba(0, 0, 0, 0.51);
+}
+
+p.coming_soon {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1180px) {
@@ -577,19 +622,6 @@ dd:after {
     width: 200px;
     margin: auto;
     display: block;
-  }
-  
-  .contact input {
-    display: block;
-    background-color: #fd1818;
-  }
-  
-  input {
-    background-color: red;
-  }
-  
-  #test {
-    background: red;
   }
   
   #overlay_box iframe {
