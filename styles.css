@@ -320,6 +320,18 @@ button.ios:active, button.android:active {
   opacity: .85;
 }
 
+.video_wrapper.large {
+  width: 100px;
+  height: 65px;
+  float: right;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.large .video {
+  width: 100px;
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.03);
   padding: 20px;
@@ -617,6 +629,10 @@ section#article_reviews a {
   display: block;
 }
 
+#video_mbl {
+  display: none;
+}
+
 @media only screen and (min-width: 1180px) {
 
   .right {
@@ -707,7 +723,7 @@ section#article_reviews a {
   }
   
   p.learn_more.mbl {
-    display: none;
+    display: block;
     font-size: 1.6em;
     bottom: 40px;
     text-align: center;
@@ -746,17 +762,45 @@ section#article_reviews a {
   p.intro {
     margin: 10px 0;
   }
+
+  nav li {
+    margin: 30px 40px;
+  }
   
-  footer {
-    display: none;
+  header ul {
+    text-align: center;
+  }
+  
+  #video_mbl {
+    display: block !important;
+    height: 300px;
+    width: 100%;
+  }
+  
+  #video_mbl iframe {
+    display: block;
   }
 }
 
 @media only screen and (max-device-width: 320px) {
 
-  .wrapper.full {
-     padding: 40px;
+  nav {
+    font-size: 2em;
+  }
+
+  header img {
+    width: 75%;
+    margin: 30px 10px;
+  }
+
+  .wrapper.full div {
+     padding: 0;
      text-align: left;
+     width: 100%;
+   }
+   
+   section {
+     width: 100%;
    }
    
   .wrapper.full p {
@@ -806,6 +850,9 @@ section#article_reviews a {
    display: block;
  }
 
+ iframe {
+   width: 100%;
+ }
  
   #btn_wrapper {
     margin-top: 20px;
@@ -855,4 +902,23 @@ section#article_reviews a {
     margin-left: 0px;
     background-size: 80%;
   }
+  
+  nav li {
+    margin: 30px 40px;
+  }
+  
+  header ul {
+    text-align: center;
+  }
+  
+  #video_mbl {
+    display: block !important;
+    height: 300px;
+    width: 100%;
+  }
+  
+  #video_mbl iframe {
+    display: block;
+  }
+  
 }
