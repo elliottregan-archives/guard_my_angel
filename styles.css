@@ -442,9 +442,20 @@ p.intro {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.44);
 }
 
-a[href^='mailto'] {
+a[href^='mailto'], .link {
   color: #328ba3;
   text-decoration: underline;
+}
+
+img.large {
+  width: 100%;
+}
+
+section#notifications img, section#settings img {
+  margin: 20px 0;
+  border: 4px solid #262626;
+  background-color: #262626;
+  border-radius: 8px;
 }
 
 .to_top {
@@ -593,6 +604,10 @@ p.coming_soon {
 section#article_reviews a {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.state_icon {
+  display: block;
 }
 
 @media only screen and (min-width: 1180px) {
