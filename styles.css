@@ -55,6 +55,10 @@ a {
 
 /* @end */
 
+body {
+  width:100%;
+}
+
 html {
   color: #747474;
   font: 1em 'Open Sans', sans-serif;
@@ -159,26 +163,22 @@ button.store {
   cursor: pointer;
   line-height: 1.8em;
 
+  background: #46b103;
+
+  background: -moz-linear-gradient(90deg, #46b103 0%, #0bcd00 60%) no-repeat #46b103;
+  background: -webkit-gradient(linear, left bottom, left top, from(#46b103), color-stop(0.6, #0bcd00)) no-repeat #46b103;
+  
+
   -moz-box-shadow: 0 4px 0 #3b791d, 0 6px 12px rgba(0, 0, 0, 0.51), inset 0 2px 0 rgba(255, 255, 255, 0.61), inset 0 1px 1px #9aff9b, inset 0 1px 32px rgba(15, 126, 17, 0.62);
   -webkit-box-shadow: 0 4px 0 #3b791d, 0 6px 12px rgba(0, 0, 0, 0.51), inset 0 2px 0 rgba(255, 255, 255, 0.61), inset 0 1px 1px #9aff9b, inset 0 1px 32px rgba(15, 126, 17, 0.62);
   box-shadow: 0 4px 0 #3b791d, 0 6px 12px rgba(0, 0, 0, 0.51), inset 0 2px 0 rgba(255, 255, 255, 0.61), inset 0 1px 1px #9aff9b, inset 0 1px 32px rgba(15, 126, 17, 0.62);
-  /* Old browsers */
-   /* FF3.6+ */
-   /* Chrome,Safari4+ */
-   /* Chrome10+,Safari5.1+ */
-   /* Opera 11.10+ */
-   /* IE10+ */
-   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b103', endColorstr='#0bcd00',GradientType=0 ); /* IE6-9 */
-  
-  border: 1px solid #4ea027;
+    border: 1px solid #4ea027;
   
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  background-color: #17bc10;
 }
 
 .store:hover {
@@ -635,6 +635,14 @@ section#article_reviews a {
   display: none;
 }
 
+img.large {
+  width: 500px;
+}
+
+html, body, p {
+  width: 100%;
+}
+
 @media only screen and (min-width: 1180px) {
 
   .right {
@@ -645,12 +653,15 @@ section#article_reviews a {
 
 @media only screen and (max-width:720px) {
 
+  img.large {
+    width: 100px;
+  }
+
   .right {
     display: none;
   }
 
   p {
-    width: 100%;
     text-align: center;
   }
 
@@ -785,6 +796,7 @@ section#article_reviews a {
   .arrow {
     display: none;
   }
+  
 }
 
 @media only screen and (max-device-width: 320px) {
