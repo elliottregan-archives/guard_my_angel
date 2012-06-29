@@ -66,7 +66,8 @@ html {
 footer.landing {
   clear: both;
   margin-top: 20px;
-  margin-left: 70px;
+  width: 100%;
+  text-align: center;
 }
 
 footer {
@@ -696,8 +697,7 @@ section#article_reviews a {
   }
   
   footer {
-    margin-top: 40px;
-    text-align: center;
+    display: none;
   }
   
   #btn_wrapper a {
@@ -779,6 +779,10 @@ section#article_reviews a {
   
   #video_mbl iframe {
     display: block;
+  }
+  
+  .arrow {
+    display: none;
   }
 }
 
