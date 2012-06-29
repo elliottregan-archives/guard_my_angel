@@ -162,13 +162,13 @@ button.store {
   -moz-box-shadow: 0 4px 0 #3b791d, 0 6px 12px rgba(0, 0, 0, 0.51), inset 0 2px 0 rgba(255, 255, 255, 0.61), inset 0 1px 1px #9aff9b, inset 0 1px 32px rgba(15, 126, 17, 0.62);
   -webkit-box-shadow: 0 4px 0 #3b791d, 0 6px 12px rgba(0, 0, 0, 0.51), inset 0 2px 0 rgba(255, 255, 255, 0.61), inset 0 1px 1px #9aff9b, inset 0 1px 32px rgba(15, 126, 17, 0.62);
   box-shadow: 0 4px 0 #3b791d, 0 6px 12px rgba(0, 0, 0, 0.51), inset 0 2px 0 rgba(255, 255, 255, 0.61), inset 0 1px 1px #9aff9b, inset 0 1px 32px rgba(15, 126, 17, 0.62);
-  background: #46b103; /* Old browsers */
-  background: -moz-linear-gradient(top,  #46b103 0%, #0bcd00 60%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#46b103), color-stop(60%,#0bcd00)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #46b103 0%,#0bcd00 60%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #46b103 0%,#0bcd00 60%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #46b103 0%,#0bcd00 60%); /* IE10+ */
-  background: linear-gradient(to bottom,  #46b103 0%,#0bcd00 60%); /* W3C */
+  /* Old browsers */
+   /* FF3.6+ */
+   /* Chrome,Safari4+ */
+   /* Chrome10+,Safari5.1+ */
+   /* Opera 11.10+ */
+   /* IE10+ */
+   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b103', endColorstr='#0bcd00',GradientType=0 ); /* IE6-9 */
   
   border: 1px solid #4ea027;
@@ -178,6 +178,7 @@ button.store {
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  background-color: #17bc10;
 }
 
 .store:hover {
